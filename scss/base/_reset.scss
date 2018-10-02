@@ -58,7 +58,7 @@ textarea {
 	font-family: $base-font-family;
 	outline: none;
 	border-radius: 0;
-	-webkit-appearance: none;
+	//-webkit-appearance: none;
 }
 
 input[type="button"],
@@ -79,7 +79,7 @@ form {
 
 a {
 	color: $link-color;
-	@include transition($default-transition);
+	transition: $default-transition;
 	text-decoration: none;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);

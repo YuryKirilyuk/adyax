@@ -1,16 +1,13 @@
-
-//main styles
-
 .main-wrapper{
-	padding: 0 0 0 0;
+	padding: 0;
 	min-width: $min-width;
-  width: 100%;
 	position: relative;
 	overflow: hidden;
 	min-height:100%;
 	display: flex;
-	flex-direction:column;
-	justify-content:flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
 }
 .wrapper{
 	min-width: $min-width;
@@ -20,92 +17,142 @@
 	position: relative;
 }
 
-/* titles */
-p{	
-	@include font($base-font-size,$base-line-height,$text-color);
-	padding: 1.5rem 0;
-	font-weight: 400;	
-}
-h1{	
-	@include font($font-size-h1,$line-height-h1,$title-color);
-	font-family: $title-font-family;
-	padding: 1.5rem 0;
-	font-weight: 400;	
-}
-h2{
-	@include font($font-size-h2,$line-height-h2,$title-color);
-	font-family: $title-font-family;
-	padding: 1.5rem 0;
-	font-weight: 400;	
-}
-h3{
-	@include font($font-size-h3,$line-height-h3,$title-color);
-	font-family: $title-font-family;
-	padding: 1.5rem 0;
-	font-weight: 400;
-}
 
 /* text position */
-.text-left{text-align: left!important}
-.text-center{text-align: center!important}
-.text-right{text-align: right!important}
-.nowrap{white-space: nowrap!important;}
+.text-left {text-align: left!important}
+.text-center {text-align: center!important}
+.text-right {text-align: right!important}
+.nowrap {white-space: nowrap!important;}
 
 
 /* loader */
 .loaded .main-wrapper{visibility:hidden;}
 .icon-load {
 	background: url(../img/loader.gif) no-repeat left top;
-	width: 4rem;
-	height: 4rem;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	margin-left: -2rem;
-	margin-left: -2rem;
 	display: none;
+	height: 4rem;
+	left: 50%;
+	margin-left: -2rem;
+	position: fixed;
+	top: 50%;
+	width: 4rem;
 }
 .loaded .icon-load{display:block;}
 
 
-/*
-================================================================================
-|                                     CONTENT                                 |
-================================================================================
-*/
-.content{	
-	background: #fff000;
+.content{
 	flex-grow: 1;
 	min-width: $min-width;
 	order: 2;
-	text-align:left;
+	padding-bottom: 20rem;
+	text-align: left;
   width: 100%;
 }
 
-
-
-
-
-
-@media screen and (max-width: 1200px) {
-	
+.title {
+	font-family: $custom-font-family;
+	font-size: 6rem;
+	font-weight: bold;
+	line-height: initial;
+	margin-bottom: 5rem;
+	text-align: center;
+}
+.description {
+	font-size: 2.4rem;
+	line-height: initial;
+	max-width: 77rem;
+	margin: auto;
 }
 
-@media screen and (min-width: 992px){
-	
-}
+.section-hero {
+	border-bottom: 1px solid #EBEBEB;
+	margin-bottom: 7.5rem;
+	padding-bottom: 14rem;
+}//.section-hero
 
-@media screen and (max-width: 991px) {
-	
-}
+.section-personal-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+	@media screen and (max-width: 600px) {
+		flex-direction: column;
+	}
+	.left,
+	.right {
+		max-width: 45rem;
+		width: 48.9130%;
+		@media screen and (max-width: 600px) {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+	input, textarea {
+		display: block;
+		margin-top: 2.2rem;
+	}
+	.form-group {
+		margin-bottom: 3rem;
+	}
+}//.section-personal-info
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-	
-}
 
-@media screen and (max-width: 767px) {
-	
-}
+.section-education {
+	margin-bottom: 6rem;
+	.radio {
+		display: inline-block;
+		margin-right: 4rem;
+	}
+}//.section-education
 
 
+.section-skills {
+	margin-bottom: 8rem;
+	p {
+		color: #979797;
+		font-size: 1.2rem;
+		margin-bottom: 3.7rem;
+		sup {vertical-align: middle;}
+	}
+	.skills-list {
+		list-style: none;
+		columns: 2;
+		li {
+			display: inline-block;
+			margin-bottom: 3.5rem;
+			width: 100%;
+		}
+	}
+}//.section-skills
 
+button {
+	border: none;
+	background: #fff;
+	box-shadow: 0 10px 50px -10px rgba(0,0,0,.2);
+	color: #191919;
+	display: block;
+	font-weight: 700;
+	height: 7.6rem;
+	letter-spacing: 2.3px;
+	margin: auto;
+	padding-left: 6rem;
+	position: relative;
+	text-transform: uppercase;
+	transition: $default-transition;
+	width: 27.6rem;
+	&:hover {
+		background: $yellow;
+		color: #fff;
+		&:before {background: #fff;}
+	}
+	&:before {
+		background: #191919;
+		bottom: 0;
+		content: '';
+		height: 1px;
+		left: 3.5rem;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		width: 4.7rem;
+	}
+}//button

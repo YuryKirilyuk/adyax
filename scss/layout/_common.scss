@@ -42,6 +42,8 @@ input::-ms-clear {
 
 a {
 	color: inherit;
+	padding-bottom: .7rem;
+	position: relative;
 	text-decoration: none;
 	transition: $default-transition;
 	&:hover {text-decoration: none;}
@@ -50,7 +52,22 @@ a {
 		outline: none;
 		text-decoration: none;
 	}
-}
+	&:after {
+		background: #FDDC3E;
+		content: '';
+		height: 2px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 0;
+		bottom: 0;
+		transition: $default-transition;
+		margin: auto;
+	}
+	&:hover:after {
+		width: 100%;
+	}
+}//a
 
 strong {font-weight: 700;}
 b {font-weight: 600;}

@@ -1,29 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700');
+
 @font-face {
-	font-family: 'Open Sans';
-	src: url('../fonts/Open Sans Light.eot');
-	src: url('../fonts/Open Sans Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Open Sans Light.woff') format('woff'), url('../fonts/Open Sans Light.ttf') format('truetype'), url('../fonts/Open Sans Light.svg#Open Sans Light') format('svg');
-	font-weight: 300;
+	font-family: 'avalon';
+	src: url('../fonts/avalon-webfont.eot');
+	src: url('../fonts/avalon-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/avalon-webfont.woff2') format('woff2'),
+	url('../fonts/avalon-webfont.woff') format('woff'),
+	url('../fonts/avalon-webfont.ttf') format('truetype'),
+	url('../fonts/avalon-webfont.svg#avalonregular') format('svg');
+	font-weight: normal;
 	font-style: normal;
-	font-stretch: normal;
-	unicode-range: U+0020-FFFD;
 }
 
 @font-face {
-	font-family: 'Open Sans';
-	src: url('../fonts/Open Sans Bold.eot');
-	src: url('../fonts/Open Sans Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Open Sans Bold.woff') format('woff'), url('../fonts/Open Sans Bold.ttf') format('truetype'), url('../fonts/Open Sans Bold.svg#Open Sans Bold') format('svg');
-	font-weight: 700;
+	font-family: 'avalon';
+	src: url('../fonts/avalon_bold-webfont.eot');
+	src: url('../fonts/avalon_bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/avalon_bold-webfont.woff2') format('woff2'),
+	url('../fonts/avalon_bold-webfont.woff') format('woff'),
+	url('../fonts/avalon_bold-webfont.ttf') format('truetype'),
+	url('../fonts/avalon_bold-webfont.svg#avalonbold') format('svg');
+	font-weight: bold;
 	font-style: normal;
-	font-stretch: normal;
-	unicode-range: U+0020-FFFD;
 }
 
 @font-face {
-	font-family: 'Open Sans';
-	src: url('../fonts/Open Sans.eot');
-	src: url('../fonts/Open Sans.eot?#iefix') format('embedded-opentype'), url('../fonts/Open Sans.woff') format('woff'), url('../fonts/Open Sans.ttf') format('truetype'), url('../fonts/Open Sans.svg#Open Sans') format('svg');
-	font-weight: 400;
+	font-family: 'adyax';
+	src:  url('../fonts/adyax.eot?aag4nv');
+	src:  url('../fonts/adyax.eot?aag4nv#iefix') format('embedded-opentype'),
+	url('../fonts/adyax.ttf?aag4nv') format('truetype'),
+	url('../fonts/adyax.woff?aag4nv') format('woff'),
+	url('../fonts/adyax.svg?aag4nv#adyax') format('svg');
+	font-weight: normal;
 	font-style: normal;
-	font-stretch: normal;
-	unicode-range: U+0020-FFFD;
+}
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'adyax' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkbox:before {
+	content: "\e900";
 }
