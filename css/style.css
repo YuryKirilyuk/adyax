@@ -608,6 +608,8 @@ form label { font-weight: 500; }
 
 form input[type="text"], form input[type="email"], form textarea { border: 1px solid #DCDCDC; height: 5rem; font-size: 1.4rem; padding: .5rem 1.2rem; width: 100%; }
 
+form input[type="text"]:focus, form input[type="email"]:focus, form textarea:focus { border-color: #333; }
+
 form textarea { height: 16.9rem; }
 
 form .radio { height: 3.5rem; letter-spacing: 1.4px; line-height: 3.5rem; }
@@ -636,8 +638,10 @@ form .checkbox label:before { background: #fff; border: 1px solid #DCDCDC; botto
 
 .fileform #fileformlabel { background-color: #fff; font-size: 1.4rem; color: #4E4E4E; line-height: 4rem; float: left; overflow: hidden; text-align: left; vertical-align: middle; }
 
-.fileform .selectbutton { background-color: #A2A3A3; border: 1px solid #939494; border-radius: 2px; color: #fff; float: right; font-size: 16px; height: 20px; line-height: 20px; overflow: hidden; padding: 2px 6px; text-align: center; vertical-align: middle; width: 50px; }
+.fileform .selectbutton { background-color: #FDDC3E; border-radius: 2px; color: #fff; float: right; font-size: 1.2rem; height: 32px; line-height: 32px; margin-top: 3px; overflow: hidden; padding: 2px 6px; text-align: center; text-transform: uppercase; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; vertical-align: middle; width: 88px; }
 
-.fileform #upload { height: 100%; left: 0; margin: 0; -moz-opacity: 0; filter: alpha(opacity=0); opacity: 0; position: absolute; top: 0; width: 100%; z-index: 20; }
+.fileform .selectbutton:hover { background: #ecc402; }
+
+.fileform #upload { height: 100%; left: 0; margin: 0; -moz-opacity: 0; filter: alpha(opacity=0); opacity: 0; position: absolute; top: 0; width: 100%; z-index: -1; }
 
 /*# sourceMappingURL=style.css.map */

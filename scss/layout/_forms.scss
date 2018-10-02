@@ -11,6 +11,7 @@ form {
     font-size: 1.4rem;
     padding: .5rem 1.2rem;
     width: 100%;
+    &:focus {border-color: #333;}
   }
   textarea {
     height: 16.9rem;
@@ -128,19 +129,24 @@ form {
     vertical-align: middle;
   }
   .selectbutton {
-    background-color: #A2A3A3;
-    border: 1px solid #939494;
+    background-color: #FDDC3E;
     border-radius: 2px;
     color: #fff;
     float: right;
-    font-size: 16px;
-    height: 20px;
-    line-height: 20px;
+    font-size: 1.2rem;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 3px;
     overflow: hidden;
     padding: 2px 6px;
     text-align: center;
+    text-transform: uppercase;
+    transition: $default-transition;
     vertical-align: middle;
-    width: 50px;
+    width: 88px;
+    &:hover {
+      background: darken(#FDDC3E, 15%);
+    }
   }
   #upload {
     height: 100%;
@@ -152,6 +158,6 @@ form {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 20;
+    z-index: -1;
   }
 }//.fileform
