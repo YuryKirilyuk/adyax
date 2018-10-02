@@ -11,7 +11,7 @@ button {
   padding-left: 6rem;
   position: relative;
   text-transform: uppercase;
-  transition: $default-transition;
+  transition: background .2s linear;;
   width: 27.6rem;
   &:hover {
     background: $yellow;

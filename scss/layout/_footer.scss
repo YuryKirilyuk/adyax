@@ -2,25 +2,27 @@ footer{
 	background: #000 url(../img/footer_bg.jpg) center no-repeat;
 	height: $footerHeight;
 	color: #fff;
-	font-family: $custom-font-family;
-	font-weight: bold;
-	font-size: 4rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	min-width: $min-width;
 	order: 3;
 	position: relative;
-	width: 100%;
-	line-height: 5.2rem;
-	text-align: center;
-	@media screen and (max-width: 425px) {
-		font-size: 2rem;
-		height: 50rem;
-		line-height: 3.5rem;
-	}
 	.wrapper {
-		max-width: 65rem;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		.footer-content {
+			font-family: $custom-font-family;
+			font-weight: bold;
+			font-size: 4rem;
+			line-height: 5.2rem;
+			max-width: 65rem;
+			text-align: center;
+			@media screen and (max-width: 425px) {
+				font-size: 2rem;
+				height: 50rem;
+				line-height: 3.5rem;
+			}
+		}
 	}
 }//footer
 
