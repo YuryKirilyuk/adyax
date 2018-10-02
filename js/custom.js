@@ -1,31 +1,6 @@
 $(window).on('load', function () {
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-		$('body').addClass('ios');
-	} else{
-		$('body').addClass('web');
-	};
-	$('body').removeClass('loaded'); 
+	$('body').removeClass('loaded');
 });
-
-
-/* ==========================================================================
-   When the window is scrolled, do
-   ========================================================================== */
-   
-	$(window).scroll(function() {		
-	
-		
-	});
-
-/* ==========================================================================
-   When the window is resized, do
-   ========================================================================== */
-   
-	$(window).resize(function() {
-		
-		
-	});
-
 
 $(".fileform input").change(function() {
 
@@ -38,10 +13,4 @@ $(".fileform input").change(function() {
         $("#fileformlabel").text(filename);
     }
     getName(getPath);
-});
-
-$(function(){
-
-
-
 });

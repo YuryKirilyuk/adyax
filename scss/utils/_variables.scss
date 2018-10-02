@@ -48,23 +48,3 @@ $headerHeightMobile: 7.2rem;
 $footerHeight: 69rem;
 
 $default-transition: all .2s linear;
-
-
-
-
-
-/* Grid */
-$vertical-gutter: 2rem;
-$horizontal-gutter: 2rem;
-
-						//.col-2-of-3
-@function grid($col, $numOfCol){
-	$numOfGutters: $numOfCol - 1; //number of gutters between columns in a row
-	$addGutter: ($col - 1) * $horizontal-gutter; //number of gutters, width of which should be added to column
-	
-	$width: calc( 
-		(((100% - #{$horizontal-gutter} * #{$numOfGutters}) / #{$numOfCol}) * #{$col}) + #{$addGutter}							
-	);
-
-	@return $width;
-}
