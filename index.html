@@ -52,7 +52,7 @@
 						</div><!-- //.form-group -->
 						<div class="form-group">
 							<label>
-								YOUR PORTOLIO / GITHUB
+								YOUR PORTFOLIO / GITHUB
 								<input type="text" name="github"/>
 							</label>
 						</div><!-- //.form-group -->
@@ -68,9 +68,15 @@
 						<div class="form-group">
 							<label>
 								CV
-								<input type="file" name="cv"/>
+								<div class="fileform">
+									<div id="fileformlabel">Choose file</div>
+									<div class="selectbutton">UPLOAD</div>
+									<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+								</div>
 							</label>
 						</div><!-- //.form-group -->
+
+
 
 					</div><!-- //.right -->
 
@@ -193,12 +199,7 @@
 	
 	<script src="js/jquery-3.0.0.min.js"></script>		
 	<script src="js/jquery-migrate-1.4.1.min.js" ></script>
-	<!--
-	<script src="js/components/jquery.fancybox.js" ></script>
-	<script src="js/components/jquery.formstyler.js" ></script>
-	<script src="js/components/slick.js" ></script>
-	<script src="js/components/jquery.mCustomScrollbar.js" ></script>
-	-->
 	<script src="js/custom.js" ></script>
+
 </body>
 </html>

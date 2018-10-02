@@ -8,6 +8,7 @@ form {
   textarea  {
     border: 1px solid #DCDCDC;
     height: 5rem;
+    font-size: 1.4rem;
     padding: .5rem 1.2rem;
     width: 100%;
   }
@@ -104,3 +105,53 @@ form {
   }//.checkbox
 
 }//form
+
+.fileform {
+  background-color: #fff;
+  border: 1px solid #DCDCDC;
+  cursor: pointer;
+  height: 5rem;
+  margin-top: 2.2rem;
+  overflow: hidden;
+  padding: .5rem 1.2rem;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  #fileformlabel {
+    background-color: #fff;
+    font-size: 1.4rem;
+    color: #4E4E4E;
+    line-height: 4rem;
+    float: left;
+    overflow: hidden;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .selectbutton {
+    background-color: #A2A3A3;
+    border: 1px solid #939494;
+    border-radius: 2px;
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 2px 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+  }
+  #upload {
+    height: 100%;
+    left: 0;
+    margin: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+  }
+}//.fileform

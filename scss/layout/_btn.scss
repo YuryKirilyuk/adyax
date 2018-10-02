@@ -1,3 +1,32 @@
-.btn {
-	
-}
+button {
+  border: none;
+  background: #fff;
+  box-shadow: 0 10px 50px -10px rgba(0,0,0,.2);
+  color: #191919;
+  display: block;
+  font-weight: 700;
+  height: 7.6rem;
+  letter-spacing: 2.3px;
+  margin: auto;
+  padding-left: 6rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: $default-transition;
+  width: 27.6rem;
+  &:hover {
+    background: $yellow;
+    color: #fff;
+    &:before {background: #fff;}
+  }
+  &:before {
+    background: #191919;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 3.5rem;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 4.7rem;
+  }
+}//button

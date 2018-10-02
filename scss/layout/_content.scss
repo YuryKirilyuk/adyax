@@ -47,6 +47,9 @@
 	padding-bottom: 20rem;
 	text-align: left;
   width: 100%;
+	@media screen and (max-width: 425px) {
+		padding-bottom: 10rem;
+	}
 }
 
 .title {
@@ -56,6 +59,9 @@
 	line-height: initial;
 	margin-bottom: 5rem;
 	text-align: center;
+	@media screen and (max-width: 320px) {
+		font-size: 4rem;
+	}
 }
 .description {
 	font-size: 2.4rem;
@@ -68,6 +74,10 @@
 	border-bottom: 1px solid #EBEBEB;
 	margin-bottom: 7.5rem;
 	padding-bottom: 14rem;
+	@media screen and (max-width: 425px) {
+		margin-bottom: 5.5rem;
+		padding-bottom: 7rem;
+	}
 }//.section-hero
 
 .section-personal-info {
@@ -107,6 +117,9 @@
 
 .section-skills {
 	margin-bottom: 8rem;
+	@media screen and (max-width: 425px) {
+		margin-bottom: 5rem;
+	}
 	p {
 		color: #979797;
 		font-size: 1.2rem;
@@ -116,43 +129,17 @@
 	.skills-list {
 		list-style: none;
 		columns: 2;
+		@media screen and (max-width: 425px) {
+			columns: unset;
+		}
 		li {
 			display: inline-block;
 			margin-bottom: 3.5rem;
 			width: 100%;
-		}
-	}
-}//.section-skills
+			@media screen and (max-width: 320px) {
+				margin-bottom: 1.5rem;
+			}
+		}//li
 
-button {
-	border: none;
-	background: #fff;
-	box-shadow: 0 10px 50px -10px rgba(0,0,0,.2);
-	color: #191919;
-	display: block;
-	font-weight: 700;
-	height: 7.6rem;
-	letter-spacing: 2.3px;
-	margin: auto;
-	padding-left: 6rem;
-	position: relative;
-	text-transform: uppercase;
-	transition: $default-transition;
-	width: 27.6rem;
-	&:hover {
-		background: $yellow;
-		color: #fff;
-		&:before {background: #fff;}
-	}
-	&:before {
-		background: #191919;
-		bottom: 0;
-		content: '';
-		height: 1px;
-		left: 3.5rem;
-		margin: auto;
-		position: absolute;
-		top: 0;
-		width: 4.7rem;
-	}
-}//button
+	}//.skills-list
+}//.section-skills
